@@ -21,9 +21,9 @@ int main(void)
 		*/
 		
 		
-		 GPIO_SetBits(GPIOD ,GPIO_Pin_3);
+		 GPIO_SetBits(GPIOD ,GPIO_Pin_5);
 		 Delay(10000000);
-     GPIO_ResetBits(GPIOD ,GPIO_Pin_3);
+     GPIO_ResetBits(GPIOD ,GPIO_Pin_5);
   	 Delay(10000000);
 		
   }
@@ -35,7 +35,7 @@ void GPIO_Configuration(void)
 
   /* Configure PD12 PD15 in output pushpull mode */
   //GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14 | GPIO_Pin_15;  //Bat den o chan 14, 15
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;  //Bat den o chan 14, 15
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;  //Bat den o chan 14, 15
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
